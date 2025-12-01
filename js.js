@@ -22,10 +22,9 @@ form.addEventListener("submit", (e) => {
     languages: languages
   };
 
-  // Save to localStorage
   localStorage.setItem("userData", JSON.stringify(userData));
 
-  showData(); // Update display
+  showData(); 
 });
 
 function showData() {
