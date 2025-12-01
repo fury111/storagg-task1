@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Personal Information Form</h2>
+
+<form id="userForm">
+
+  <label>Your Name</label>
+  <input type="text" id="name" required>
+
+  <label>Your Age</label>
+  <input type="number" id="age" required>
+
+  <label>Gender</label>
+  <select id="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <label>Brief Description</label>
+  <textarea id="bio"></textarea>
+
+  <label>Your Major and University</label>
+  <input type="text" id="major" required>
+
+  <label>Programming Languages (Select at least 3)</label>
+  <div>
+    <input type="checkbox" name="pl" value="JavaScript"> JavaScript<br>
+    <input type="checkbox" name="pl" value="Python"> Python<br>
+    <input type="checkbox" name="pl" value="C++"> C++<br>
+    <input type="checkbox" name="pl" value="Java"> Java<br>
+    <input type="checkbox" name="pl" value="C#"> C#<br>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<h3>Saved Data:</h3>
+<div id="display"></div>
+
+<script src="js.js"></script>
+</body>
+</html>
